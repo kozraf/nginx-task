@@ -48,7 +48,7 @@ podTemplate(label: 'mypod', serviceAccount: 'jenkins-admin', containers: [
         stage('Create NGINX service') {
          
             container('kubectl') { 
-                 sh 'kubectl create -f /home/jenkins/agent/workspace/nginx-task/nginx-svc'               
+                 sh 'kubectl create -f /home/jenkins/agent/workspace/nginx-task/nginx-svc.yml'               
             }
             
         }  
